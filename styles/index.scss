@@ -1,0 +1,17 @@
+@import './variaveis';
+@import './fonts';
+@import './fonts';
+@import './page';
+@import './pageConfirm';
+@import './form';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(234, 29%, 20%);
+}
+

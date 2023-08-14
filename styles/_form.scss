@@ -1,0 +1,85 @@
+.envio  {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+
+    .valid {
+        display: flex;
+        justify-content: space-between;
+
+        label {
+            font-family: 'Roboto-bold', sans-serif;
+            font-size: .8rem;
+        }
+
+        .validActive {
+            color: $Tomato;
+            font-family: 'Roboto-bold', sans-serif;
+            font-size: .8rem;
+            visibility: hidden;
+        }
+
+        .validActive.error {
+            color: $Tomato;
+            visibility: visible;
+        }
+
+      
+    }
+
+     .envioNew {
+        margin: 5px 0px 20px 0px;
+        padding: 20px;
+        font-size: 1rem;
+        border: 1px solid $Grey;
+        border-radius: 10px;
+        outline: none;
+        color: $Grey;
+        
+    }
+
+    .envioNew.error {
+        border: 1px solid $Tomato;
+        color: $Tomato;
+        background-color: rgb(255, 226, 226);
+        visibility: visible;
+    }
+
+    .envioNew.error::placeholder {
+        color: $Tomato;
+    }
+    
+
+    button {
+        margin: 5px 0px 20px 0px;
+        padding: 20px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: $dark-slate-grey;
+        color: $White; 
+        font-family: 'Roboto-bold', sans-serif;
+
+        &:hover {
+            background-color: $Tomato;
+            transition: 0.7s all;
+            cursor: pointer;
+        }
+
+        &:focus {
+            background-color: $Tomato;
+        }
+    }
+    }
+
+    @media(max-width: 375px) {
+        .envioNew {
+            width: 100%;
+        }
+
+        button {
+            width: 100%;
+        }
+    }
+   

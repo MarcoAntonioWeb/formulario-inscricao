@@ -1,0 +1,88 @@
+.sucess {
+    @include flexCenter();
+    background-color: $White;
+    max-width: 420px;
+    padding: 30px;
+    border-radius: 20px;
+    display: none;
+    //visibility: hidden;
+
+     span, img {
+        width: 2.7rem;
+        padding-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-family: 'Roboto-bold', sans-serif;
+        color: $dark-slate-grey;
+        padding-bottom: 20px;
+
+    }
+
+    p {
+        font-size: 1rem;
+        color: $dark-slate-grey;
+        font-family: 'roboto', sans-serif;
+        line-height: 25px;
+        padding-bottom: 40px;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0px 20px 0px;
+        padding: 20px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: $dark-slate-grey;
+        color: $White; 
+        font-family: 'Roboto-bold', sans-serif;
+       
+
+        &:hover {
+            background-color: $Tomato;
+            transition: 0.7s all;
+        }
+
+        &:focus {
+            background-color: $Tomato;
+        }
+
+        
+    }
+}
+.sucess.hide {
+    display: block;
+    //visibility: visible;
+}
+
+@media(max-width: 425px) {
+    .sucess {
+        position: fixed;
+        top: 380px;
+        //bottom: 1000px;
+        width: 100%;
+        min-height: 900px;
+        border-radius: 0px;
+
+        span, img {
+            width: 3rem;
+            padding-top: 60px;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.6rem;
+        }
+
+        p {
+            padding-bottom: 90px;
+        }
+
+        
+    }
+
+
+}
